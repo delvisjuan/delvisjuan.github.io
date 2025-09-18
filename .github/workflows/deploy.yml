@@ -5,9 +5,9 @@ on:
     branches:
       - main # O la rama que uses para tu código principal
 
-# Añade este bloque de permisos
+# Añade los permisos de escritura para que la acción pueda subir archivos
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -21,7 +21,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Asegúrate de usar una versión compatible con tu proyecto
+          node-version: '20'
       
       - name: Instalar dependencias
         run: npm install
@@ -30,7 +30,7 @@ jobs:
         run: npm run generate
       
       - name: Subir a GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.output/public # La ruta correcta a los archivos generados
+          publish_dir: ./.output/public
