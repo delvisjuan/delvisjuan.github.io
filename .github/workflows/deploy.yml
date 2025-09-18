@@ -1,36 +1,41 @@
-name: Deploy Nuxt to GitHub Pages
-
+# https://github.com/actions/deploy-pages#usage
+name: Deploy to GitHub Pages
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main # O la rama que uses para tu código principal
-
-# Añade los permisos de escritura para que la acción pueda subir archivos
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
+      - main
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout del repositorio
-        uses: actions/checkout@v4
-      
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-      
-      - name: Instalar dependencias
-        run: npm install
-        
-      - name: Generar el sitio estático
-        run: npm run generate
-      
-      - name: Subir a GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+          node-version: "20"
+      # Pick your own package manager and build script
+      - run: npm install
+      - run: npx nuxt build --preset github_pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.output/public
+          path: ./.output/public
+  # Deployment job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    # Deploy to the github_pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
