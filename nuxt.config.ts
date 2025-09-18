@@ -17,16 +17,9 @@ export default defineNuxtConfig({
       web3FormsAccessKey: "f75fc468-d47a-487d-9213-42bc67b7b5e8"
     }
   },
-  // target: 'static',
-  // ssr: false,
-  image: {
-    domains: ['cdn.jsdelivr.net']
-  },
   app: {
     head: {
-      link: [
-        { rel: 'preconnect', href: 'https://cdn.jsdelivr.net' }
-      ]
+      // Head configuration
     }
   }
 })

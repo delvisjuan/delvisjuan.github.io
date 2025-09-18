@@ -20,139 +20,139 @@
     // Frontend
     { 
       name: 'Nuxt.js',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg',
+      iconUrl: '/nuxtjs-original.svg',
       class: 'bg-white rounded-full p-1'
     },
     { 
       name: 'React',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+      iconUrl: '/react-original.svg'
     },
     { 
       name: 'React Native',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      iconUrl: '/react-original.svg',
       class: 'text-blue-400'
     },
     { 
       name: 'Vue.js',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg'
+      iconUrl: '/vuejs-original.svg'
     },
     { 
       name: 'Tailwind CSS',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg'
+      iconUrl: '/tailwindcss-original.svg'
     },
     { 
       name: 'Material UI',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg'
+      iconUrl: '/materialui-original.svg'
     },
     { 
       name: 'HTML5',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+      iconUrl: '/html5-original.svg'
     },
     { 
       name: 'CSS3',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+      iconUrl: '/css3-original.svg'
     },
     { 
       name: 'JavaScript',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+      iconUrl: '/javascript-original.svg'
     },
     { 
       name: 'TypeScript',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+      iconUrl: '/typescript-original.svg'
     },
     
     // Backend
     { 
       name: 'Node.js',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+      iconUrl: '/nodejs-original.svg'
     },
     { 
       name: 'Express',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+      iconUrl: '/express-original.svg',
       class: 'bg-white rounded p-1'
     },
     { 
       name: 'Python',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
+      iconUrl: '/python-original.svg'
     },
     { 
       name: 'FastAPI',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+      iconUrl: '/fastapi-original.svg',
       class: 'rounded p-1'
     },
     { 
       name: 'Django',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
+      iconUrl: '/django-plain.svg',
       class: 'bg-white rounded-full p-1'
     },
     { 
       name: 'Java',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
+      iconUrl: '/java-original.svg'
     },
     
     // Databases
     { 
       name: 'MySQL',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
+      iconUrl: '/mysql-original.svg'
     },
     { 
       name: 'PostgreSQL',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
+      iconUrl: '/postgresql-original.svg'
     },
     { 
       name: 'Sequelize',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg',
+      iconUrl: '/sequelize-original.svg',
       class: 'rounded p-1'
     },
     
     // DevOps & Tools
     { 
       name: 'Docker',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'
+      iconUrl: '/docker-original.svg'
     },
     { 
       name: 'Git',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'
+      iconUrl: '/git-original.svg'
     },
     { 
       name: 'GitHub',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+      iconUrl: '/github-original.svg',
       class: 'bg-white rounded-full p-1'
     },
     { 
       name: 'npm',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
+      iconUrl: '/npm-original-wordmark.svg',
       class: 'rounded p-1'
     },
     { 
       name: 'yarn',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg',
+      iconUrl: '/yarn-original.svg',
       class: 'rounded p-1'
     },
     
     // Embedded & IoT
     { 
       name: 'Arduino',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg'
+      iconUrl: '/arduino-original.svg'
     },
     { 
       name: 'Raspberry Pi',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg'
+      iconUrl: '/raspberrypi-original.svg'
     },
     { 
       name: 'Node-RED',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodered/nodered-original.svg',
+      iconUrl: '/nodered-original.svg',
       class: 'rounded p-1'
     },
     
     // Programming Languages
     { 
       name: 'C',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'
+      iconUrl: '/c-original.svg'
     },
     { 
       name: 'C++',
-      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'
+      iconUrl: '/cplusplus-original.svg'
     }
   ])
 </script>
